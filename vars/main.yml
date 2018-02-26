@@ -1,0 +1,8 @@
+---
+consul_template_packages:
+  - name: consul-template
+
+consul_template_dirs:
+  - name: /usr/local/etc/consul-templates
+  - name: /usr/local/etc/consul-template.d
+
