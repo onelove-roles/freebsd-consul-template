@@ -1,4 +1,6 @@
 ---
+consul_template_root: /usr/local/etc/consul-templates
+
 consul_template_packages:
   - name: consul-template
 
