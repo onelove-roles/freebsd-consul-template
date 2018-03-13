@@ -18,3 +18,10 @@
     dest: /etc/rc.conf.d/consul_template
   notify:
     - restart consul-template
+
+- name: configure consul-template service
+  template:
+    src: consul-template.conf.j2
+    dest: /usr/local/etc/consul-template.d/consul-template.conf
+  notify:
+    - restart consul-template
